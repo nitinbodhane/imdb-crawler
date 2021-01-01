@@ -28,14 +28,14 @@ export class MovieListComponent implements OnInit {
   }
 
   fetchMovieList(count: number) {
+    console.log('====', typeof count, count);
     this.imdbServiceService.getMovieList(count, (err: any, data: any) => {
-      console.log(data.data);
       this.movieRecords = data.data;
     });
   }
 
-  refreshTotal(count: string) {
-    this.fetchMovieList(Number(count));
+  refreshTotal(count: number) {
+    this.fetchMovieList(count);
   }
 
   sortTable(value: string) {

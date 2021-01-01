@@ -16,13 +16,13 @@
   <table id="movieList" class="table display nowrap" style="width:100%">
     <thead>
         <tr>
-            <th><span class="float-left">Name</span><span class="float-right" (click)="sortTable(name)"><fa-icon [icon]="faSort"></fa-icon></span></th>
-            <th><span class="float-left">Year</span><span class="float-right" (click)="sortTable(year)"><fa-icon [icon]="faSort"></fa-icon></span></th>
-            <th><span class="float-left">Duration</span><span class="float-right" (click)="sortTable(duration)"><fa-icon [icon]="faSort"></fa-icon></span></th>
-            <th><span class="float-left">Genre</span><span class="float-right" (click)="sortTable(genre)"><fa-icon [icon]="faSort"></fa-icon></span></th>
-            <th><span class="float-left">Imdb Rating</span><span class="float-right" (click)="sortTable(imdbRating)"><fa-icon [icon]="faSort"></fa-icon></span></th>
-            <th><span class="float-left">User Rating</span><span class="float-right" (click)="sortTable(userRating.ratingValue)"><fa-icon [icon]="faSort"></fa-icon></span></th>
-            <th><span class="float-left">Metascore</span><span class="float-right" (click)="sortTable(metaScore)"><fa-icon [icon]="faSort"></fa-icon></span></th>
+            <th><span class="float-left">Name</span><span class="float-right" (click)="sortTable('name')"><fa-icon [icon]="faSort"></fa-icon></span></th>
+            <th><span class="float-left">Year</span><span class="float-right" (click)="sortTable('year')"><fa-icon [icon]="faSort"></fa-icon></span></th>
+            <th><span class="float-left">Duration</span><span class="float-right" (click)="sortTable('duration')"><fa-icon [icon]="faSort"></fa-icon></span></th>
+            <th><span class="float-left">Genre</span><span class="float-right" (click)="sortTable('genre')"><fa-icon [icon]="faSort"></fa-icon></span></th>
+            <th><span class="float-left">Imdb Rating</span><span class="float-right" (click)="sortTable('imdbRating')"><fa-icon [icon]="faSort"></fa-icon></span></th>
+            <th><span class="float-left">User Rating</span><span class="float-right" (click)="sortTable('userRating.ratingValue')"><fa-icon [icon]="faSort"></fa-icon></span></th>
+            <th><span class="float-left">Metascore</span><span class="float-right" (click)="sortTable('metaScore')"><fa-icon [icon]="faSort"></fa-icon></span></th>
         </tr>
     </thead>
     <tbody>
